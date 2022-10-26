@@ -17,6 +17,10 @@ public class modetradadados {
 		
 		double resto = carroNumero % pessoaNumero;
 		
+		int resposta = JOptionPane.showConfirmDialog(null, "Deseja ver o resultado da divisão?");
+		
+		System.out.println(resposta);
+		
 		JOptionPane.showMessageDialog(null, "Divisão para pessoas deu " + divisao + " carros e sobrou " + resto + " carros ");
 		
 	}
