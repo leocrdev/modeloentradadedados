@@ -14,14 +14,21 @@ public class modetradadados {
 		double pessoaNumero = Double.parseDouble(pessoas);
 		
 		int divisao = (int) (carroNumero / pessoaNumero);
-		
+	
 		double resto = carroNumero % pessoaNumero;
 		
 		int resposta = JOptionPane.showConfirmDialog(null, "Deseja ver o resultado da divisão?");
 		
-		System.out.println(resposta);
+		if (resposta == 0) {
+		    JOptionPane.showMessageDialog(null, "Divisão para pessoas deu " + divisao);
+		}
 		
-		JOptionPane.showMessageDialog(null, "Divisão para pessoas deu " + divisao + " carros e sobrou " + resto + " carros ");
+		resposta = JOptionPane.showConfirmDialog(null, "Deseja ver o restante da divisão?");
+		
+		if (resposta == 0) {
+			JOptionPane.showMessageDialog(null, "O restante de divisão é " + resto);
+		}
+	
 		
 	}
 
